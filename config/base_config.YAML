@@ -2,8 +2,8 @@ wandb_run_name: "model_a_clean"
 
 training:
   # --- Data Paths ---
-  train_data_path: "data/data/tokenized_train.npy"
-  valid_data_path: "data/data/tokenized_valid.npy"
+  train_data_path: "/kaggle/input/tokenized-no-leak-train/tokenized_train.npy"
+  valid_data_path: "/kaggle/input/tokenized-no-leak-valid/tokenized_valid.npy"
   logging_freq: 500
   # --- Model Hyperparameters ---
   model:
@@ -21,7 +21,7 @@ training:
   optimizer:
     beta_1: 0.9
     beta_2: 0.95
-    weight_decay: 0.1
+    weight_decay: 0.01
 
   # --- Training Loop Hyperparameters ---
   # Learning rate schedule
