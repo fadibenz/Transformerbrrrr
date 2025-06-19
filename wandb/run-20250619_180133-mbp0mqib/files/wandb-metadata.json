@@ -1,0 +1,33 @@
+{
+  "os": "Windows-11-10.0.22621-SP0",
+  "python": "CPython 3.12.3",
+  "startedAt": "2025-06-19T15:01:33.661859Z",
+  "args": [
+    "--config_path",
+    ".\\config\\base_config.YAML",
+    "--output_path",
+    "checkpoints/model_a_clean"
+  ],
+  "program": "C:\\Users\\Admin\\Documents\\Work\\CS336\\Transformer\\main.py",
+  "codePath": "main.py",
+  "email": "benzaimafadi@gmail.com",
+  "root": "C:\\Users\\Admin\\Documents\\Work\\CS336\\Transformer",
+  "host": "DESKTOP-DC5M999",
+  "executable": "C:\\Users\\Admin\\Documents\\Work\\CS336\\Transformer\\.venv\\Scripts\\python.exe",
+  "codePathLocal": "main.py",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "427078516736",
+      "used": "392667471872"
+    }
+  },
+  "memory": {
+    "total": "16969424896"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  }
+}

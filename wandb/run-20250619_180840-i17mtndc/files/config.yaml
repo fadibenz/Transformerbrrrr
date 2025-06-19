@@ -1,0 +1,52 @@
+_wandb:
+    value:
+        cli_version: 0.19.9
+        m: []
+        python_version: 3.12.3
+        t:
+            "1":
+                - 1
+                - 55
+            "2":
+                - 1
+                - 55
+            "3":
+                - 13
+                - 16
+                - 23
+                - 55
+            "4": 3.12.3
+            "5": 0.19.9
+            "8":
+                - 3
+                - 5
+            "12": 0.19.9
+            "13": windows-amd64
+training:
+    value:
+        annealing_steps: 40000
+        batch_size: 32
+        epochs: 5
+        logging_freq: 200
+        max_l2_norm: 1
+        max_lr: 0.0003
+        min_lr: 1e-05
+        model:
+            RoPE_theta: 10000
+            context_length: 256
+            d_ff: 1536
+            d_k: 64
+            d_model: 384
+            d_v: 64
+            num_heads: 6
+            num_layers: 6
+            vocab_size: 8192
+        optimizer:
+            beta_1: 0.9
+            beta_2: 0.95
+            weight_decay: 0.1
+        train_data_path: data/data/tokenized_train.npy
+        valid_data_path: data/data/tokenized_valid.npy
+        warmup_steps: 2000
+wandb_run_name:
+    value: model_a_clean

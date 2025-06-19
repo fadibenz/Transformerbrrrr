@@ -1,0 +1,37 @@
+wandb_run_name: "model_a_clean"
+
+training:
+  # --- Data Paths ---
+  train_data_path: "data/data/tokenized_train.npy"
+  valid_data_path: "data/data/tokenized_valid.npy"
+  logging_freq: 200
+  # --- Model Hyperparameters ---
+  model:
+    vocab_size: 10000
+    context_length: 256
+    d_model: 384
+    d_ff: 1536
+    num_layers: 6
+    num_heads: 6
+    d_k: 64
+    d_v: 64
+    RoPE_theta: 10000.0
+
+  # --- Optimizer Hyperparameters ---
+  optimizer:
+    beta_1: 0.9
+    beta_2: 0.95
+    weight_decay: 0.1
+
+  # --- Training Loop Hyperparameters ---
+  # Learning rate schedule
+  min_lr: 1.0e-5
+  max_lr: 3.0e-4
+  warmup_steps: 2000
+  annealing_steps: 40000
+
+  batch_size: 32
+  max_l2_norm: 1.0
+
+  # Training duration
+  epochs: 5
