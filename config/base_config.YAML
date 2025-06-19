@@ -4,7 +4,7 @@ training:
   # --- Data Paths ---
   train_data_path: "data/data/tokenized_train.npy"
   valid_data_path: "data/data/tokenized_valid.npy"
-  logging_freq: 200
+  logging_freq: 500
   # --- Model Hyperparameters ---
   model:
     vocab_size: 10000
@@ -30,7 +30,7 @@ training:
   warmup_steps: 2000
   annealing_steps: 40000
 
-  batch_size: 32
+  batch_size: 64
   max_l2_norm: 1.0
 
   # Training duration

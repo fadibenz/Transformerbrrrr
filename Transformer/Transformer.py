@@ -31,7 +31,7 @@ class Transformer(nn.Module):
                                                     device, dtype)
                                    for _ in range(num_layers)])
         self.RMSNorm =  RMSNorm(d_model, device=device, dtype=dtype)
-        self.Output = Linear(d_model, vocab_size)
+        self.Output = Linear(d_model, vocab_size, device)
         self.device = device
 
     def forward(self,
