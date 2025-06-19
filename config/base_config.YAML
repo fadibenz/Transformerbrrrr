@@ -1,4 +1,4 @@
-wandb_run_name: "model_a_clean"
+wandb_run_name: "model_b_leaky"
 
 training:
   # --- Data Paths ---
